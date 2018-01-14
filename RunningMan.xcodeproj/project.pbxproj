@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F5920841200B43A6006CD7C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5920840200B43A6006CD7C3 /* AppDelegate.swift */; };
+		F5920843200B43A6006CD7C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5920842200B43A6006CD7C3 /* ViewController.swift */; };
+		F5920846200B43A6006CD7C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5920844200B43A6006CD7C3 /* Main.storyboard */; };
+		F5920848200B43A6006CD7C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5920847200B43A6006CD7C3 /* Assets.xcassets */; };
+		F592084B200B43A6006CD7C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5920849200B43A6006CD7C3 /* LaunchScreen.storyboard */; };
+		F5920850200B43A6006CD7C3 /* RunningMan WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F592084F200B43A6006CD7C3 /* RunningMan WatchKit App.app */; };
+		F5920856200B43A6006CD7C3 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5920854200B43A6006CD7C3 /* Interface.storyboard */; };
+		F5920858200B43A6006CD7C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5920857200B43A6006CD7C3 /* Assets.xcassets */; };
+		F592085F200B43A6006CD7C3 /* RunningMan WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F592085E200B43A6006CD7C3 /* RunningMan WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F5920864200B43A6006CD7C3 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5920863200B43A6006CD7C3 /* InterfaceController.swift */; };
+		F5920866200B43A6006CD7C3 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5920865200B43A6006CD7C3 /* ExtensionDelegate.swift */; };
+		F5920868200B43A6006CD7C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5920867200B43A6006CD7C3 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F5920851200B43A6006CD7C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5920835200B43A6006CD7C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F592084E200B43A6006CD7C3;
+			remoteInfo = "RunningMan WatchKit App";
+		};
+		F5920860200B43A6006CD7C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5920835200B43A6006CD7C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F592085D200B43A6006CD7C3;
+			remoteInfo = "RunningMan WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F592086F200B43A6006CD7C3 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F592085F200B43A6006CD7C3 /* RunningMan WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5920873200B43A6006CD7C3 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				F5920850200B43A6006CD7C3 /* RunningMan WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F592083D200B43A6006CD7C3 /* RunningMan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunningMan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5920840200B43A6006CD7C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F5920842200B43A6006CD7C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F5920845200B43A6006CD7C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F5920847200B43A6006CD7C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F592084A200B43A6006CD7C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F592084C200B43A6006CD7C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F592084F200B43A6006CD7C3 /* RunningMan WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RunningMan WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5920855200B43A6006CD7C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		F5920857200B43A6006CD7C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5920859200B43A6006CD7C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F592085E200B43A6006CD7C3 /* RunningMan WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "RunningMan WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5920863200B43A6006CD7C3 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		F5920865200B43A6006CD7C3 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		F5920867200B43A6006CD7C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5920869200B43A6006CD7C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F592083A200B43A6006CD7C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F592085B200B43A6006CD7C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F5920834200B43A6006CD7C3 = {
+			isa = PBXGroup;
+			children = (
+				F592083F200B43A6006CD7C3 /* RunningMan */,
+				F5920853200B43A6006CD7C3 /* RunningMan WatchKit App */,
+				F5920862200B43A6006CD7C3 /* RunningMan WatchKit Extension */,
+				F592083E200B43A6006CD7C3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F592083E200B43A6006CD7C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F592083D200B43A6006CD7C3 /* RunningMan.app */,
+				F592084F200B43A6006CD7C3 /* RunningMan WatchKit App.app */,
+				F592085E200B43A6006CD7C3 /* RunningMan WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F592083F200B43A6006CD7C3 /* RunningMan */ = {
+			isa = PBXGroup;
+			children = (
+				F5920840200B43A6006CD7C3 /* AppDelegate.swift */,
+				F5920842200B43A6006CD7C3 /* ViewController.swift */,
+				F5920844200B43A6006CD7C3 /* Main.storyboard */,
+				F5920847200B43A6006CD7C3 /* Assets.xcassets */,
+				F5920849200B43A6006CD7C3 /* LaunchScreen.storyboard */,
+				F592084C200B43A6006CD7C3 /* Info.plist */,
+			);
+			path = RunningMan;
+			sourceTree = "<group>";
+		};
+		F5920853200B43A6006CD7C3 /* RunningMan WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				F5920854200B43A6006CD7C3 /* Interface.storyboard */,
+				F5920857200B43A6006CD7C3 /* Assets.xcassets */,
+				F5920859200B43A6006CD7C3 /* Info.plist */,
+			);
+			path = "RunningMan WatchKit App";
+			sourceTree = "<group>";
+		};
+		F5920862200B43A6006CD7C3 /* RunningMan WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F5920863200B43A6006CD7C3 /* InterfaceController.swift */,
+				F5920865200B43A6006CD7C3 /* ExtensionDelegate.swift */,
+				F5920867200B43A6006CD7C3 /* Assets.xcassets */,
+				F5920869200B43A6006CD7C3 /* Info.plist */,
+			);
+			path = "RunningMan WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F592083C200B43A6006CD7C3 /* RunningMan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5920874200B43A6006CD7C3 /* Build configuration list for PBXNativeTarget "RunningMan" */;
+			buildPhases = (
+				F5920839200B43A6006CD7C3 /* Sources */,
+				F592083A200B43A6006CD7C3 /* Frameworks */,
+				F592083B200B43A6006CD7C3 /* Resources */,
+				F5920873200B43A6006CD7C3 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5920852200B43A6006CD7C3 /* PBXTargetDependency */,
+			);
+			name = RunningMan;
+			productName = RunningMan;
+			productReference = F592083D200B43A6006CD7C3 /* RunningMan.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F592084E200B43A6006CD7C3 /* RunningMan WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5920870200B43A6006CD7C3 /* Build configuration list for PBXNativeTarget "RunningMan WatchKit App" */;
+			buildPhases = (
+				F592084D200B43A6006CD7C3 /* Resources */,
+				F592086F200B43A6006CD7C3 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5920861200B43A6006CD7C3 /* PBXTargetDependency */,
+			);
+			name = "RunningMan WatchKit App";
+			productName = "RunningMan WatchKit App";
+			productReference = F592084F200B43A6006CD7C3 /* RunningMan WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		F592085D200B43A6006CD7C3 /* RunningMan WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F592086C200B43A6006CD7C3 /* Build configuration list for PBXNativeTarget "RunningMan WatchKit Extension" */;
+			buildPhases = (
+				F592085A200B43A6006CD7C3 /* Sources */,
+				F592085B200B43A6006CD7C3 /* Frameworks */,
+				F592085C200B43A6006CD7C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RunningMan WatchKit Extension";
+			productName = "RunningMan WatchKit Extension";
+			productReference = F592085E200B43A6006CD7C3 /* RunningMan WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5920835200B43A6006CD7C3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = NeonatCore;
+				TargetAttributes = {
+					F592083C200B43A6006CD7C3 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					F592084E200B43A6006CD7C3 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					F592085D200B43A6006CD7C3 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F5920838200B43A6006CD7C3 /* Build configuration list for PBXProject "RunningMan" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F5920834200B43A6006CD7C3;
+			productRefGroup = F592083E200B43A6006CD7C3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F592083C200B43A6006CD7C3 /* RunningMan */,
+				F592084E200B43A6006CD7C3 /* RunningMan WatchKit App */,
+				F592085D200B43A6006CD7C3 /* RunningMan WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F592083B200B43A6006CD7C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F592084B200B43A6006CD7C3 /* LaunchScreen.storyboard in Resources */,
+				F5920848200B43A6006CD7C3 /* Assets.xcassets in Resources */,
+				F5920846200B43A6006CD7C3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F592084D200B43A6006CD7C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5920858200B43A6006CD7C3 /* Assets.xcassets in Resources */,
+				F5920856200B43A6006CD7C3 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F592085C200B43A6006CD7C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5920868200B43A6006CD7C3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5920839200B43A6006CD7C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5920843200B43A6006CD7C3 /* ViewController.swift in Sources */,
+				F5920841200B43A6006CD7C3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F592085A200B43A6006CD7C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5920866200B43A6006CD7C3 /* ExtensionDelegate.swift in Sources */,
+				F5920864200B43A6006CD7C3 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F5920852200B43A6006CD7C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F592084E200B43A6006CD7C3 /* RunningMan WatchKit App */;
+			targetProxy = F5920851200B43A6006CD7C3 /* PBXContainerItemProxy */;
+		};
+		F5920861200B43A6006CD7C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F592085D200B43A6006CD7C3 /* RunningMan WatchKit Extension */;
+			targetProxy = F5920860200B43A6006CD7C3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F5920844200B43A6006CD7C3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5920845200B43A6006CD7C3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F5920849200B43A6006CD7C3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F592084A200B43A6006CD7C3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F5920854200B43A6006CD7C3 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5920855200B43A6006CD7C3 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F592086A200B43A6006CD7C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F592086B200B43A6006CD7C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F592086D200B43A6006CD7C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y2M3TGJYMN;
+				INFOPLIST_FILE = "RunningMan WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.neonatcore.RunningMan.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.1;
+			};
+			name = Debug;
+		};
+		F592086E200B43A6006CD7C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y2M3TGJYMN;
+				INFOPLIST_FILE = "RunningMan WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.neonatcore.RunningMan.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.1;
+			};
+			name = Release;
+		};
+		F5920871200B43A6006CD7C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y2M3TGJYMN;
+				IBSC_MODULE = RunningMan_WatchKit_Extension;
+				INFOPLIST_FILE = "RunningMan WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.neonatcore.RunningMan.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.1;
+			};
+			name = Debug;
+		};
+		F5920872200B43A6006CD7C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y2M3TGJYMN;
+				IBSC_MODULE = RunningMan_WatchKit_Extension;
+				INFOPLIST_FILE = "RunningMan WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.neonatcore.RunningMan.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.1;
+			};
+			name = Release;
+		};
+		F5920875200B43A6006CD7C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y2M3TGJYMN;
+				INFOPLIST_FILE = RunningMan/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.neonatcore.RunningMan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F5920876200B43A6006CD7C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y2M3TGJYMN;
+				INFOPLIST_FILE = RunningMan/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.neonatcore.RunningMan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F5920838200B43A6006CD7C3 /* Build configuration list for PBXProject "RunningMan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F592086A200B43A6006CD7C3 /* Debug */,
+				F592086B200B43A6006CD7C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F592086C200B43A6006CD7C3 /* Build configuration list for PBXNativeTarget "RunningMan WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F592086D200B43A6006CD7C3 /* Debug */,
+				F592086E200B43A6006CD7C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5920870200B43A6006CD7C3 /* Build configuration list for PBXNativeTarget "RunningMan WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5920871200B43A6006CD7C3 /* Debug */,
+				F5920872200B43A6006CD7C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5920874200B43A6006CD7C3 /* Build configuration list for PBXNativeTarget "RunningMan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5920875200B43A6006CD7C3 /* Debug */,
+				F5920876200B43A6006CD7C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F5920835200B43A6006CD7C3 /* Project object */;
+}
