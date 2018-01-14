@@ -16,9 +16,10 @@
 		F5920856200B43A6006CD7C3 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5920854200B43A6006CD7C3 /* Interface.storyboard */; };
 		F5920858200B43A6006CD7C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5920857200B43A6006CD7C3 /* Assets.xcassets */; };
 		F592085F200B43A6006CD7C3 /* RunningMan WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F592085E200B43A6006CD7C3 /* RunningMan WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		F5920864200B43A6006CD7C3 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5920863200B43A6006CD7C3 /* InterfaceController.swift */; };
+		F5920864200B43A6006CD7C3 /* RunSelectIC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5920863200B43A6006CD7C3 /* RunSelectIC.swift */; };
 		F5920866200B43A6006CD7C3 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5920865200B43A6006CD7C3 /* ExtensionDelegate.swift */; };
 		F5920868200B43A6006CD7C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5920867200B43A6006CD7C3 /* Assets.xcassets */; };
+		F5920878200B569F006CD7C3 /* TimerIC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5920877200B569F006CD7C3 /* TimerIC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,10 +77,11 @@
 		F5920857200B43A6006CD7C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5920859200B43A6006CD7C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F592085E200B43A6006CD7C3 /* RunningMan WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "RunningMan WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F5920863200B43A6006CD7C3 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		F5920863200B43A6006CD7C3 /* RunSelectIC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunSelectIC.swift; sourceTree = "<group>"; };
 		F5920865200B43A6006CD7C3 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		F5920867200B43A6006CD7C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5920869200B43A6006CD7C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5920877200B569F006CD7C3 /* TimerIC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerIC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,7 +148,8 @@
 		F5920862200B43A6006CD7C3 /* RunningMan WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				F5920863200B43A6006CD7C3 /* InterfaceController.swift */,
+				F5920863200B43A6006CD7C3 /* RunSelectIC.swift */,
+				F5920877200B569F006CD7C3 /* TimerIC.swift */,
 				F5920865200B43A6006CD7C3 /* ExtensionDelegate.swift */,
 				F5920867200B43A6006CD7C3 /* Assets.xcassets */,
 				F5920869200B43A6006CD7C3 /* Info.plist */,
@@ -299,7 +302,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5920866200B43A6006CD7C3 /* ExtensionDelegate.swift in Sources */,
-				F5920864200B43A6006CD7C3 /* InterfaceController.swift in Sources */,
+				F5920878200B569F006CD7C3 /* TimerIC.swift in Sources */,
+				F5920864200B43A6006CD7C3 /* RunSelectIC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

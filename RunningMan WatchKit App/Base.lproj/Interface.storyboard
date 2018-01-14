@@ -9,28 +9,34 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13507"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--Run SelectIC-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller spacing="15" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="RunningMan_WatchKit_App" customModuleProvider="target">
+                <controller spacing="15" id="AgC-eL-Hgc" customClass="RunSelectIC" customModule="RunningMan_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label width="1" alignment="center" text="Pick run time" textAlignment="center" id="oWC-Qb-bFg">
-                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
-                        </label>
-                        <slider width="1" alignment="center" value="5" maximum="60" steps="12" id="yKY-ky-KyZ"/>
+                        <picker height="100" alignment="left" id="yLZ-2d-A3O">
+                            <connections>
+                                <action selector="runPicked:" destination="AgC-eL-Hgc" id="jTy-fR-ClR"/>
+                            </connections>
+                        </picker>
                         <button width="1" alignment="left" title="Start 5 min run" id="62l-6r-e8k">
                             <connections>
                                 <segue destination="NME-2J-NSq" kind="push" identifier="toTimer" id="8dL-zp-0iV"/>
                             </connections>
                         </button>
                     </items>
+                    <connections>
+                        <outlet property="runPicker" destination="yLZ-2d-A3O" id="vL6-qa-33K"/>
+                        <outlet property="startBtn" destination="62l-6r-e8k" id="qZC-6Z-fvi"/>
+                    </connections>
                 </controller>
             </objects>
+            <point key="canvasLocation" x="-96" y="282"/>
         </scene>
-        <!--Interface Controller-->
+        <!--TimerIC-->
         <scene sceneID="nvY-RU-6pE">
             <objects>
-                <controller spacing="20" id="NME-2J-NSq">
+                <controller spacing="20" id="NME-2J-NSq" customClass="TimerIC" customModule="RunningMan_WatchKit_Extension">
                     <items>
                         <timer alignment="center" id="Lbp-Po-58D">
                             <fontDescription key="font" type="system" pointSize="24"/>
@@ -38,15 +44,33 @@
                         <label alignment="center" text="Calories: 0" id="ZNu-AG-SdI"/>
                         <group alignment="center" spacing="5" id="xx3-8B-SDF">
                             <items>
-                                <button alignment="left" backgroundImage="play" id="sQX-ah-7TF"/>
-                                <button alignment="left" backgroundImage="pause" id="E2w-ac-Pxd"/>
-                                <button alignment="center" backgroundImage="cancel" id="SQV-ge-Kb6"/>
+                                <button alignment="left" backgroundImage="play" id="sQX-ah-7TF">
+                                    <connections>
+                                        <action selector="playBtnWasPressed" destination="NME-2J-NSq" id="Sk3-Rq-U1Y"/>
+                                    </connections>
+                                </button>
+                                <button alignment="left" backgroundImage="pause" id="E2w-ac-Pxd">
+                                    <connections>
+                                        <action selector="pauseBtnWasPressed" destination="NME-2J-NSq" id="24A-zZ-3Yj"/>
+                                    </connections>
+                                </button>
+                                <button alignment="center" backgroundImage="cancel" id="SQV-ge-Kb6">
+                                    <connections>
+                                        <action selector="cancelBtnWasPressed" destination="NME-2J-NSq" id="gbb-0B-k53"/>
+                                    </connections>
+                                </button>
                             </items>
                         </group>
                     </items>
+                    <connections>
+                        <outlet property="caloriesLbl" destination="ZNu-AG-SdI" id="gWT-5E-7fN"/>
+                        <outlet property="countdownTimer" destination="Lbp-Po-58D" id="bTO-zh-5EV"/>
+                        <outlet property="pauseBtn" destination="E2w-ac-Pxd" id="0v1-8p-B4T"/>
+                        <outlet property="playBtn" destination="sQX-ah-7TF" id="QQk-YG-2dn"/>
+                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="318" y="282"/>
+            <point key="canvasLocation" x="191" y="282"/>
         </scene>
     </scenes>
 </document>
